@@ -51,7 +51,7 @@ st.write(f"your level: {st.session_state['level']}")
 st.write(f"your position: {st.session_state['position']}")
 st.write(f"your company: {st.session_state['company']}")
 
-    if st.button('Start interview',on_click=setup_complete()):
+if st.button('Start interview',on_click=setup_complete()):
 
         st.session_state['messsages']=[
         SystemMessage(content=
